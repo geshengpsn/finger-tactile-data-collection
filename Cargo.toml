@@ -1,0 +1,13 @@
+[package]
+name = "finger-tactile-model"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+ati_sensor = { git = "https://github.com/geshengpsn/ati_sensor" }
+aruco-rs = { git = "https://github.com/geshengpsn/aruco-rs" }
+
+[dependencies.nokhwa]
+version = "0.10.4"
+# Use the native input backends, enable WGPU integration
+features = ["input-native", "output-wgpu"]
